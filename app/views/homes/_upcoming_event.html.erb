@@ -1,5 +1,32 @@
-<% if @upcoming_event.found? %>
-  <%= render "event_details", event: @upcoming_event %>
-<% else %>
-  <p>No Upcoming Event</p>
-<% end %>
+<p class="events__item-title" data-role="event-name">May Meeting</p>
+
+<p data-role="event-date-info">
+  <time>May 9, 2019</time>
+</p>
+
+<p>
+  <time>7:00PM</time>
+  to
+  <time>9:00PM</time>
+</p>
+
+<address data-role="event-venue-info">
+  ABC Company<br>
+  1 Happy Way<br>
+  Ruby City
+</address>
+
+<p>
+  <%= link_to(
+    "RSVP",
+    "#",
+    class: "cta--primary"
+  ) %>
+</p>
+
+<p>
+  <%= link_to(
+    "See all events",
+    "#"
+  )%>
+</p>
